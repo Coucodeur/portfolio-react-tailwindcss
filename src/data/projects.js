@@ -6,7 +6,7 @@ const projects = [
       'Application de gestion de repas et création de liste de courses en fonction des repas séléctionnés pour faciliter sa gestion des courses pour la famille !',
     technologies: ['React', 'Sass'],
     status: 'En cours',
-    link: 'https://www.coutmatech.com/',
+    link: 'keskonmange.coutmatech.com/',
     github: 'https://github.com/Coucodeur/keskonmange',
   },
   {
