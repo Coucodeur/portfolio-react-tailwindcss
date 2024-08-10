@@ -1,0 +1,26 @@
+@font-face {
+  font-family: 'Boska';
+  src: url('/fonts/Boska.ttf') format('TrueType');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Overused';
+  src: url('/fonts/OverusedGrotesk-VF.ttf') format('TrueType');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'JettBrain';
+  src: url('/fonts/JetBrainsMonoNL-Medium.ttf') format('TrueType');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.active {
+  @apply text-importanttextcolor underline scale-105;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
