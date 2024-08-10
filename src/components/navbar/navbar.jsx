@@ -6,44 +6,42 @@ const Navbar = () => {
     { number: '03', name: 'Contact', url: '/contact' },
   ];
   return (
-    <nav className="w-vw min-h-32 grid place-items-center">
-      <div className="w-full px-14 max-lg:px-2 max-lg:text-xs flex justify-between items-center">
-        <Link
-          to="/"
-          className="font-boska font-extrabold text-3xl transition-all text-importantcolor cursor-pointer "
-        >
-          MCO
-        </Link>
+    <nav className="w-full flex justify-between items-center pt-2 px-2">
+      {/* <div className="w-full px-14 max-lg:px-2 max-lg:text-xs flex justify-between items-center"> */}
+      <Link
+        to="/"
+        className="font-boska md:font-bold md:text-3xl transition-all text-importantcolor cursor-pointer "
+      >
+        MCO
+      </Link>
 
-        <div className="flex justify-center gap-12">
-          <ul className="flex gap-12">
-            {links.map((link) => (
-              <li
-                key={link.name}
-                className="underline-offset-2 transition-all text-lg max-lg:text-xs items-center flex"
+      <div className="font-jetbrain flex justify-center text-xs gap-1">
+        <ul className="flex gap-2">
+          {links.map((link) => (
+            <li
+              key={link.name}
+              className="underline-offset-2 transition-all items-center flex"
+            >
+              <NavLink
+                to={link.url}
+                className="hover:text-importanttextcolor hover:scale-105 transition-all items-center flex"
               >
-                <NavLink
-                  to={link.url}
-                  className="hover:text-importanttextcolor hover:scale-105 transition-all text-lg max-lg:text-xs items-center flex"
-                >
-                  <div className="flex gap-2">
-                    <span className="font-jetbrain text-importantcolor">
-                      {link.number}.
-                    </span>
-                    <span className="font-jetbrain">{link.name}</span>
-                  </div>
-                </NavLink>
-              </li>
-            ))}
-          </ul>
-          <Link
-            to={'/mco'}
-            className="text-importantcolor font-jetbrain border-2 border-importantcolor px-6 py-3 rounded-md hover:bg-importantcolor hover:text-primary transition-all"
-          >
-            Découvrir
-          </Link>
-        </div>
+                <div className="flex gap-1">
+                  <span className=" text-importantcolor">{link.number}.</span>
+                  <span>{link.name}</span>
+                </div>
+              </NavLink>
+            </li>
+          ))}
+        </ul>
+        <Link
+          to={'/mco'}
+          className="text-importantcolor  border-2 border-importantcolor px-1 py-1 rounded-md hover:bg-importantcolor hover:text-primary transition-all"
+        >
+          Découvrir
+        </Link>
       </div>
+      {/* </div> */}
     </nav>
   );
 };
