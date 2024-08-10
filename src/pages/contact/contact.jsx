@@ -7,7 +7,7 @@ const Contact = () => {
     <div className="mt-32 flex">
       <Leftside />
       <div className="basis-auto grow grid items-center justify-center">
-        <h1 className="text-9xl"> Ici la page de contact</h1>
+        <h1 className="text-6xl text-red-400">En travaux</h1>
       </div>
       <Rightside />
     </div>

@@ -5,9 +5,8 @@ const Rightside = () => {
     emailArray.push(email[i]);
   }
   return (
-    <div className="w-44 flex-none grid items-center justify-center gap-16">
-      {/* // <div className="w-44 flex-none flex flex-col"> */}
-      <p className="flex text-sm text-center flex-col gap-y-0">
+    <div className="w-44 max-lg:w-10 flex-none grid items-center justify-center gap-16">
+      <p className="flex text-sm hover:text-importantcolor text-center flex-col gap-y-0">
         {emailArray.map((letter, index) => (
           <span className="rotate-90" key={index}>
             {letter}
@@ -16,7 +15,7 @@ const Rightside = () => {
       </p>
 
       <svg
-        className="w-8 fill-textcolor hover:fill-importanttextcolor transition-all"
+        className="w-100 fill-textcolor hover:fill-importanttextcolor transition-all"
         viewBox="0 0 10 100"
       >
         <line x1="5" y1="0" x2="5" y2="100" stroke="white" />

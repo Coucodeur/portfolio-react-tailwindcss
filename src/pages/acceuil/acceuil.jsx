@@ -4,11 +4,10 @@ import Rightside from '../../components/rightside/rightside';
 
 const Acceuil = () => {
   return (
-    // <div className="w-full grid items-center justify-center">
     <div className="mt-32 flex">
       <Leftside />
-      <div className="basis-auto grow grid items-center justify-center">
-        <div className="px-1 flex flex-col gap-9 ">
+      <div className="basis-auto grow flex items-center justify-center">
+        <div className="w-5/6 max-w-3xl px-1 flex flex-col gap-9 ">
           <p className="text-importantcolor font-jetbrain text-xl tracking-widest">
             {/* eslint-disable-next-line react/no-unescaped-entities */}
             Bonjour, je m'appelle

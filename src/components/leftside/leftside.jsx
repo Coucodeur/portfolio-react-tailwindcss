@@ -2,9 +2,9 @@ import { Link } from 'react-router-dom';
 
 const Leftside = () => {
   return (
-    <div className="w-44 flex-none grid items-center justify-center">
+    <div className="w-44 max-lg:w-10 flex-none grid items-center justify-center">
       <svg
-        className="w-8 fill-textcolor hover:fill-importanttextcolor transition-all"
+        className="w-100 fill-textcolor hover:fill-importanttextcolor transition-all"
         viewBox="0 0 10 100"
       >
         <line x1="5" y1="0" x2="5" y2="100" stroke="white" />

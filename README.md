@@ -8,3 +8,9 @@ Ce portfolio est à la fois l'occasion de me présenter à vous mais également 
 - React
 - Vite
 - Tailwind CSS
+
+
+## A venir
+- Optimisation support mobile
+- Page de contact
+- Page de présentation
