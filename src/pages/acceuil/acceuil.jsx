@@ -22,8 +22,8 @@ const Acceuil = () => {
           </div>
           <div>
             <p className="text-2xl mt-6">
-              Je suis un développeur web passionné par la création de sites web
-              modernes et performants.
+              Je suis un développeur web passionné par la création
+              d'applications web modernes et performantes.
             </p>
             <p className="text-2xl mt-1">
               Basé en Alsace, je serais ravis de vous aider dans votre
