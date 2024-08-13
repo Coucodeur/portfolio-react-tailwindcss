@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 const Projectcard = ({ projet }) => {
   return (
-    <div className="projetContainer opacity-90 w-11/12 max-w-96 p-2 flex flex-col gap-4 rounded-sm hover:bg-textcolor hover:bg-opacity-5 hover:opacity-100">
+    <div className="projetContainer opacity-90 w-11/12 max-w-96 p-1 flex flex-col gap-4 rounded-sm hover:bg-textcolor hover:bg-opacity-5 hover:opacity-100 bg-textcolor bg-opacity-5 md:bg-transparent md:p-3">
       <h1 className="projetTitle text-2xl text-importanttextcolor">
         {projet.title}
       </h1>

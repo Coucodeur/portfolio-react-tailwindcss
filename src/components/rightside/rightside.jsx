@@ -5,7 +5,7 @@ const Rightside = () => {
     emailArray.push(email[i]);
   }
   return (
-    <div className="w-44 max-lg:w-10 flex-none grid items-center justify-center gap-16">
+    <div className="w-44 h-screen max-lg:w-10 flex-none grid items-center justify-center gap-16">
       <p className="flex text-sm hover:text-importantcolor text-center flex-col gap-y-0">
         {emailArray.map((letter, index) => (
           <span className="rotate-90" key={index}>

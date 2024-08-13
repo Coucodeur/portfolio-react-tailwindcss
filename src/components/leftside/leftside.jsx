@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 const Leftside = () => {
   return (
-    <div className="w-44 max-lg:w-10 flex-none grid items-center justify-center">
+    <div className="w-44 h-screen max-lg:w-10 grid justify-center gap-3">
       <svg
         className="w-100 fill-textcolor hover:fill-importanttextcolor transition-all"
         viewBox="0 0 10 100"

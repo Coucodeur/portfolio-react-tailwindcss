@@ -23,7 +23,7 @@ const projects = [
     id: 2,
     title: 'Infinity quizz',
     description:
-      "Application créée à l'occasion du passage de mon diplôme de développeur web. Il s'agit d'un générateur de quizz par intelligence artificielle. Dévellopé en équipe de 3 personnes.",
+      "Application créée à l'occasion du passage de mon diplôme de développeur web. Il s'agit d'un générateur de quizz par intelligence artificielle. Développé en équipe de 3 personnes.",
     technologies: ['React', 'Sass', 'Node.js', 'Express', 'PosgreSQL'],
     status: 'Terminé',
     link: 'https://infinity-quiz.me/',
