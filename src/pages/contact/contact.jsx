@@ -1,26 +1,36 @@
+import { useRef } from 'react';
 import Leftside from '../../components/leftside/leftside';
 import Rightside from '../../components/rightside/rightside';
+import emailjs from '@emailjs/browser';
+const serviceId = import.meta.env.VITE_SERVICE_ID;
+const templateID = import.meta.env.VITE_TEMPLATE_ID;
+const publicKey = import.meta.env.VITE_PUBLIC_KEY;
 
 const Contact = () => {
-  const handleSubmit = (e) => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
     e.preventDefault();
-    const form = e.target;
-    const data = new FormData(form);
-    const object = {};
-    data.forEach((value, key) => {
-      object[key] = value;
-    });
-    const json = JSON.stringify(object);
-    console.log(object);
-    console.log(json);
-    form.reset();
+
+    emailjs
+      .sendForm(serviceId, templateID, form.current, {
+        publicKey: publicKey,
+      })
+      .then(
+        () => {
+          console.log('SUCCESS!');
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        }
+      );
   };
 
   return (
     <div className="mt-7 flex">
       <Leftside />
       <div className="mt-7 basis-auto grow grid items-center justify-center">
-        <form onSubmit={(e) => handleSubmit(e)}>
+        <form ref={form} onSubmit={(e) => sendEmail(e)}>
           <div className="flex flex-col">
             <label name="lastName">Nom</label>
             <input type="text" name="lastName" required />
