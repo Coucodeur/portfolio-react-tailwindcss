@@ -28,7 +28,6 @@ const Contact = () => {
 
     return (
         <div className="mt-7 flex">
-            <Leftside />
             <div className="mt-7 basis-auto grow grid items-center justify-center">
                 <form
                     ref={form}
@@ -69,7 +68,6 @@ const Contact = () => {
                     </div>
                 </form>
             </div>
-            <Rightside />
         </div>
     );
 };
