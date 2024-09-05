@@ -10,7 +10,7 @@ const Layout = () => {
       <Navbar />
       <div className="layout-content md:flex mt-6">
         <Leftside />
-        <div className="childrens-layout basis-auto grow mx-4 p-1  border-sky-200">
+        <div className="childrens-layout-container basis-auto grow  p-1 border-sky-200 border-">
           {<Outlet />}
         </div>
         <Rightside />

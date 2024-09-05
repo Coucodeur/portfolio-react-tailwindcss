@@ -1,14 +1,18 @@
+import jobs from '../../data/cv';
+import Jobcard from '../../components/jobcard/Jobcard';
+
 const Mco = () => {
+  console.log('cest la page des jobs');
+
   return (
-    <div className="mt-32 flex">
-      <div className="basis-auto grow grid items-center justify-center">
-        <h1 className="text-6xl text-red-400">En construction</h1>
-        <div className="columns-2">
-          <p>Well, let me tell you something, ...</p>
-          <p className="break-inside-avoid-column">Sure, go ahead, laugh...</p>
-          <p>Maybe we can live without...</p>
-          <p>Look. If you think this is...</p>
-        </div>
+    <div className="mt-14">
+      <h1 className="text-4xl font-jetbrain text-importantcolor mb-7">
+        Expériences
+      </h1>
+      <div className="jobs-container flex flex-col items-center">
+        {jobs.map((job) => (
+          <Jobcard key={job.id} job={job} />
+        ))}
       </div>
     </div>
   );

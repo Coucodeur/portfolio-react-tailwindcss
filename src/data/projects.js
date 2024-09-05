@@ -29,6 +29,16 @@ const projects = [
     link: 'https://infinity-quiz.me/',
     github: 'https://github.com/FlLefe/Infinity-Quiz',
   },
+  {
+    id: 4,
+    title: 'Fighter Tournament',
+    description:
+      'Interface web permettant à tous les oragnisateurs de tournois de pouvoir afficher et éditer en temps réel les informations sur le match en cours. Le but est proposer une interface dynamique et uniforme aux spectateurs.',
+    technologies: ['React', 'Css'],
+    status: 'En cours',
+    link: 'https://sf6layout.coutmatech.com/',
+    github: 'https://github.com/Coucodeur/sf6-tournament-layout',
+  },
 ];
 
 export default projects;
