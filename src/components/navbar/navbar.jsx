@@ -2,7 +2,7 @@ import { NavLink, Link } from 'react-router-dom';
 
 const links = [
   { number: '01', name: 'Accueil', url: '/' },
-  { number: '02', name: 'Projets', url: '/projet' },
+  { number: '02', name: 'Projets', url: '/projets' },
   { number: '03', name: 'Parcours', url: '/mco' },
 ];
 
