@@ -1,4 +1,3 @@
-import Navbar from './components/navbar/navbar';
 import Acceuil from './pages/acceuil/acceuil';
 import Projet from './pages/projet/projet';
 import Contact from './pages/contact/contact';

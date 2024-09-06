@@ -1,16 +1,18 @@
 const Rightside = () => {
+  // Email address to display
   const email = 'matthieucoutant@gmail.com';
-  const emailArray = [];
-  for (let i = 0; i < email.length; i++) {
-    emailArray.push(email[i]);
-  }
+
+  // Transform the email string into an array of letters
+  const emailLetters = email.split('');
+
   return (
     <div className="w-16 h-[750px] flex-none md:grid hidden items-center justify-center gap-16">
       <a
-        href="mailto:matthieucoutant@gmail.com"
+        href={`mailto:${email}`}
         className="flex text-xs hover:text-importantcolor text-center flex-col gap-y-0"
       >
-        {emailArray.map((letter, index) => (
+        {/* Display each letter of the email vertically rotated */}
+        {emailLetters.map((letter, index) => (
           <span className="rotate-90" key={index}>
             {letter}
           </span>

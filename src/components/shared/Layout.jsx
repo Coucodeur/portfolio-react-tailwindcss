@@ -1,4 +1,3 @@
-import React from 'react';
 import { Outlet } from 'react-router-dom';
 import Leftside from '../leftside/leftside';
 import Rightside from '../rightside/rightside';

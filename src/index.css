@@ -17,6 +17,7 @@
   font-style: normal;
 }
 
+/* For active navbar's active links */
 .active {
   @apply text-importanttextcolor underline scale-105;
 }
