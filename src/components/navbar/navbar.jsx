@@ -27,11 +27,10 @@ const Navbar = () => {
       className={
         scrolling
           ? 'bg-primary sticky top-0 transition duration-700 z-10'
-          : 'sticky top-0  transition duration-700 z-10 bg-blue-'
+          : 'sticky top-0  transition duration-700 z-10 '
       }
     >
       <nav className="w-full flex justify-between items-center pt-2 px-2 md:px-2">
-        {/* <div className="w-full px-14 max-lg:px-2 max-lg:text-xs flex justify-between items-center"> */}
         <Link
           to="/"
           className="font-boska md:font-bold md:text-3xl transition-all text-importantcolor cursor-pointer "
